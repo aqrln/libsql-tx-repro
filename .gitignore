@@ -1,0 +1,8 @@
+.envrc
+.direnv/
+
+node_modules/
+
+*.db
+*.db-shm
+*.db-wal
