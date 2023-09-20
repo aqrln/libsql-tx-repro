@@ -14,6 +14,8 @@ const client = createClient({
   authToken: process.env.AUTH_TOKEN,
 });
 
+await client.sync();
+
 const tx = await client.transaction("write");
 console.log(await tx.execute("SELECT 1"));
 await tx.commit();
